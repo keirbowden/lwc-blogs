@@ -41,10 +41,11 @@ export default class RefreshApex extends LightningElement {
             this.getLatest();
         })
         .catch((error) => {
+            let errors=reduceErrors(error).reduce((accumulator, currentValue) => accumulator.concat(', ', currentValue), '');
             this.dispatchEvent(
                 new ShowToastEvent({
                     title: 'Error Incrementing Page Views',
-                    message: message,
+                    message: errors.substring(2),
                     variant: 'error'
                 })
             );
@@ -63,10 +64,11 @@ export default class RefreshApex extends LightningElement {
             );
         })
         .catch((error) => {
+            let errors=reduceErrors(error).reduce((accumulator, currentValue) => accumulator.concat(', ', currentValue), '');
             this.dispatchEvent(
                 new ShowToastEvent({
                     title: 'Error Refreshing Data',
-                    message: message,
+                    message: errors.substring(2),
                     variant: 'error'
                 })
             );
