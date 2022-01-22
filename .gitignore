@@ -38,3 +38,5 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+standard__LightningBolt.app-meta.xml
+standard__LightningSales.app-meta.xml

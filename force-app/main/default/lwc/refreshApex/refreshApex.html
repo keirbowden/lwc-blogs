@@ -1,0 +1,13 @@
+<template>
+    <lightning-card>
+        <h1 slot="title">Home Page</h1>
+        <div class="slds-var-p-around_small">
+            <p>Name: {page.Name}</p>
+            <p>Views: {page.Views__c}</p>
+            <div class="slds-var-p-top_small">
+                <lightning-button variant="brand" label="Increment Views" onclick={incViews} >
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
