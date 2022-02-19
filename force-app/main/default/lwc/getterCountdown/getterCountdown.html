@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Countdown">
+        <div class="slds-var-p-around_medium">
+            <template if:false={timerStarted}>
+                <div>
+                    <lightning-input label="Time" type="number" value={timer} onchange={timerChanged}></lightning-input>
+                </div>
+                <lightning-button label="Start" onclick={startCountdown}></lightning-button>
+            </template>
+            <div class="slds-var-p-top_medium">
+                <div class={countdownClass}>{countdown}</div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,11 @@
+.expired {
+    color: red;
+}
+
+.ticking {
+    color: green;
+}
+
+.dormant {
+    color: darkslateblue;
+}

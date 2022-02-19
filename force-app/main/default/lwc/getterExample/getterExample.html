@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Getter - Concatenate Values">
+        <div class="slds-var-p-around_small">
+            <div>
+                <lightning-input label="Title" type="text" value={title} onchange={titleChanged}></lightning-input>
+            </div>
+            <div>
+                <lightning-input label="First Name" type="text" value={firstname} onchange={firstnameChanged}></lightning-input>
+            </div>
+            <div>
+                <lightning-input label="Last Name" type="text" value={lastname} onchange={lastnameChanged}></lightning-input>
+            </div>
+            <div class="slds-var-p-top_small">
+                Full name : {fullname}
+            </div>
+            <div class="slds-var-p-top_small">
+                Use it in a sentence : {sentence}
+            </div>
+        </div>
+    </lightning-card>
+</template>
