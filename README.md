@@ -11,7 +11,7 @@ See the blog post at : http://bobbuzzard.blogspot.com/2022/01/refreshapex-and-li
 - Open the `refreshApex` page and click the `Increment Views` button.
 
 ## Getters
-See the blog post at : _coming soon_
+See the blog post at : https://bobbuzzard.blogspot.com/2022/02/lightning-web-component-getters.html
 
 - Deploy the source to a scratch org:
 
